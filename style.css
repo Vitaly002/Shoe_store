@@ -448,6 +448,56 @@ footer {
   font-size: 14px;
 }
 
+/* Images */
+
+/* Specific adjustments for various image containers */
+
+/* Slider images */
+.sliderImg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.sliderImg:hover {
+  transform: scale(1.1);
+}
+
+/* Feature icons */
+.featureIcon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.featureIcon:hover {
+  transform: scale(1.1);
+}
+
+/* Product image */
+.productImg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.productImg:hover {
+  transform: scale(1.1);
+}
+
+/* Gallery images */
+.galleryImg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.galleryImg:hover {
+  transform: scale(1.1);
+}
+
+/* Footer social icons */
+.fIcon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.fIcon:hover {
+  transform: scale(1.1);
+}
+
+
 @media screen and (max-width:480px) {
   nav{
     padding: 20px;
