@@ -124,14 +124,28 @@ currentProductSizes.forEach((size, index) => {
   });
 });
 
+// Pay Button
 const productButton = document.querySelector(".productButton");
 const payment = document.querySelector(".payment");
-const close = document.querySelector(".close");
+const paymentClose = payment.querySelector(".close");
 
 productButton.addEventListener("click", () => {
   payment.style.display = "flex";
 });
 
-close.addEventListener("click", () => {
+paymentClose.addEventListener("click", () => {
   payment.style.display = "none";
+});
+
+// Join Button
+const joinButton = document.querySelector(".fButton");
+const form = document.querySelector(".form");
+const formClose = form.querySelector(".close");
+
+joinButton.addEventListener("click", () => {
+  form.style.display = "flex";
+});
+
+formClose.addEventListener("click", () => {
+  form.style.display = "none";
 });

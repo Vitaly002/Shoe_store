@@ -123,30 +123,35 @@
                 <div class="size">43</div>
                 <div class="size">44</div>
             </div>
+            <div class="reviews">
+                <h3 class="reviewsTitle">Customer Reviews</h3>
+                <p class="review">★★★★★ - "Amazing shoes, very comfortable!"</p>
+                <p class="review">★★★★☆ - "Great style, but a bit pricey."</p>
+            </div>
             <button class="productButton">BUY NOW!</button>
         </div>
-        <div class="payment">
+        <form action="" class="payment">
             <h1 class="payTitle">Personal Information</h1>
             <label>Full Name</label>
-            <input type="text" placeholder="Your Full Name" class="payInput">
+            <input type="text" placeholder="Your Full Name" class="payInput" required>
             <label>Phone Number</label>
             <input type="text" placeholder="Your Number" class="payInput">
             <label>Address</label>
             <input type="text" placeholder="Your Address" class="payInput">
-            <h1 class="payTitle">Card Information</h1>
+            <h1 class="payTitle" pattern="\d{16}" required>Card Information</h1>
             <div class="cardIcons">
                 <img src="./img/visa.png" width="40" alt="" class="cardIcon">
                 <img src="./img/master.png" alt="" width="40" class="cardIcon">
             </div>
             <input type="password" class="payInput" placeholder="Card Number">
             <div class="cardInfo">
-                <input type="text" placeholder="MM" class="payInput sm">
-                <input type="text" placeholder="YYYY" class="payInput sm">
-                <input type="text" placeholder="CVV" class="payInput sm">
+                <input type="text" placeholder="MM" pattern="(0[1-9]|1[0-2])" class="payInput sm" required>
+                <input type="text" placeholder="YYYY" pattern="\d{4}" class="payInput sm" required>
+                <input type="text" placeholder="CVV" pattern="\d{3}" class="payInput sm" required>
             </div>
-            <button class="payButton">Checkout!</button>
+            <button type="submit" class="payButton">Checkout!</button>
             <span class="close">X</span>
-        </div>
+        </form>
     </div>
     <div class="gallery">
         <div class="galleryItem">
@@ -224,6 +229,24 @@
                     <button class="fButton">Join Us!</button>
                 </div>
             </div>
+            <!-- The form -->
+            <form action="" class="form">
+                <h1 class="pInfo">Please answer provided questions</h1>
+                <label>Full Name</label>
+                <input type="text" placeholder="Your Full Name" class="payInput" required>
+                <label>Email</label>
+                <input type="text" placeholder="Please confirm Your Email" class="payInput" required>
+                <label>Phone Number</label>
+                <input type="text" placeholder="Your Number" class="payInput" required>
+                <label>DOB</label>
+                <input type="text" placeholder="1999-01-12" class="payInput"  pattern="\d{4}-\d{2}-\d{2}" required>
+                <label>Address</label>
+                <input type="text" placeholder="Your Address" class="payInput">
+                <label>Postal Code</label>
+                <input type="text" placeholder="A1A 1A1" class="payInput" pattern="[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d" required>
+                <button class="payButton">Sign Up!</button>
+                <span class="close">X</span>
+            </form>
             <div class="footerRightMenu">
                 <h1 class="fMenuTitle">Follow Us</h1>
                 <div class="fIcons">
@@ -234,7 +257,7 @@
                 </div>
             </div>
             <div class="footerRightMenu">
-                <span class="copyright">© Sneakers 2024</span>
+                <span class="copyright">© All rights reserved. 2024</span>
             </div>
         </div>
     </footer>
